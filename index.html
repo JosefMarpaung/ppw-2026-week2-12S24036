@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Profil Profesional Josef Christian Marpaung - Mahasiswa S1 Sistem Informasi Institut Teknologi Del. Integrasi arsitektur antarmuka web semantik, UI/UX, ANAPRANCIS, MANPROBIS, MPSI, dan kepatuhan WCAG 2.2 Level AA.">
-    <meta name="keywords" content="Portofolio, Josef Christian Marpaung, Sistem Informasi, IT Del, Web Developer, ANAPRANCIS, MANPROBIS, MPSI, UI/UX, WCAG 2.2">
+    <meta name="description" content="Portofolio Profil Profesional Josef Christian Marpaung - Mahasiswa S1 Sistem Informasi Institut Teknologi Del.">
+    <meta name="keywords" content="Portofolio, Josef Christian Marpaung, Sistem Informasi, IT Del, Web Developer, WCAG 2.2">
     <meta name="author" content="Josef Christian Marpaung">
     <title>Josef Christian Marpaung | Web Developer &amp; Mahasiswa S1 Sistem Informasi IT Del</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
 
-    <!-- Aksesibilitas WCAG: Skip-to-Content Link -->
+    <!-- Aksesibilitas WCAG: Skip Link -->
     <a href="#main-content" class="skip-link">Loncat langsung ke konten utama</a>
 
-    <!-- 1. HEADER & NAVIGASI SEMANTIK (Bobot 20%) -->
+    <!-- 1. HEADER & NAVIGASI SEMANTIK -->
     <header class="site-header">
         <div class="header-container">
             <a href="#top" class="brand-logo" aria-label="Kembali ke atas">
@@ -36,13 +36,13 @@
         </div>
     </header>
 
-    <!-- TATA LETAK UTAMA: CSS Grid (Main + Aside) -->
+    <!-- WRAPPER TATA LETAK UTAMA: CSS Grid (Main + Aside) -->
     <div class="layout-wrapper">
 
         <!-- 2. KONTEN UTAMA SEMANTIK -->
         <main id="main-content" class="primary-content">
 
-            <!-- SECTION 1: PROFIL & KARTU PENGEMBANG -->
+            <!-- SECTION 1: PROFIL PENGEMBANG -->
             <section id="tentang" class="content-section" aria-labelledby="heading-tentang">
                 <header class="section-intro">
                     <span class="section-kicker">Profil Pribadi</span>
@@ -57,7 +57,6 @@
                             <img src="profile.jpg" alt="Foto Resmi Josef Christian Marpaung" class="avatar-img" width="110" height="110">
                             <span class="status-badge">Aktif</span>
                         </div>
-
                         <h2 class="user-name">Josef Christian Marpaung</h2>
                         <p class="user-role">Mahasiswa S1 Sistem Informasi &middot; Junior Web Developer &amp; UI Designer</p>
                         <p class="user-institution">Fakultas Informatika dan Teknik Elektro &middot; Institut Teknologi Del (NIM: 12S24036)</p>
@@ -97,13 +96,12 @@
                     </div>
                 </article>
 
-                <!-- Galeri Keahlian Terstruktur (3 Kategori Kompetensi) -->
+                <!-- Galeri Keahlian Terstruktur (3 Kategori) -->
                 <div id="keahlian" class="sub-block">
                     <header class="sub-block-header">
                         <h2 class="sub-block-title">Galeri Keahlian &amp; Kompetensi Terstruktur</h2>
                         <p class="sub-block-desc">Klasifikasi kemahiran teknis yang teruji langsung dalam 10 proyek laboratorium dan analisis sistem informasi.</p>
                     </header>
-
                     <div class="skills-category-grid">
                         <article class="skill-category-card">
                             <h3 class="skill-cat-title">Rekayasa Web &amp; Desain Antarmuka</h3>
@@ -114,7 +112,6 @@
                                 <li class="tag-item">Pengujian Antarmuka &amp; Kontrol Versi (Git &amp; GitHub)</li>
                             </ul>
                         </article>
-
                         <article class="skill-category-card">
                             <h3 class="skill-cat-title">Pemrograman, Basis Data &amp; AI</h3>
                             <ul class="tag-list" aria-label="Keahlian Pemrograman dan Data">
@@ -124,7 +121,6 @@
                                 <li class="tag-item">Arsitektur Data Mapper &amp; Integritas Transaksi Data</li>
                             </ul>
                         </article>
-
                         <article class="skill-category-card">
                             <h3 class="skill-cat-title">Sistem, Jaringan &amp; Manajemen Proyek</h3>
                             <ul class="tag-list" aria-label="Keahlian Sistem, Jaringan dan Manajemen">
@@ -138,7 +134,7 @@
                 </div>
             </section>
 
-            <!-- SECTION 2: PORTOFOLIO KARYA & TABEL REKAPITULASI (Bobot 15%) -->
+            <!-- SECTION 2: PORTOFOLIO & TABEL REKAPITULASI (Bobot 15%) -->
             <section id="portofolio" class="content-section" aria-labelledby="heading-portofolio">
                 <header class="section-intro">
                     <span class="section-kicker">Karya Nyata</span>
@@ -152,167 +148,59 @@
                         <div class="project-badge">Analisis &amp; Perancangan Sistem</div>
                         <h3 class="project-title">Sistem Penyewaan Alat Mendaki Gunung Sibayak</h3>
                         <p class="project-desc">Perancangan sistem informasi modern pengganti pemesanan manual via WhatsApp/telepon. Mencakup modul reservasi, verifikasi stok, pembayaran, serta pemodelan alur proses standar BPMN.</p>
-                        <dl class="project-metadata">
-                            <dt>Mata Kuliah:</dt><dd>ANAPRANCIS</dd>
-                            <dt>Peran:</dt><dd>Lead System Analyst &amp; BPMN Modeler</dd>
-                        </dl>
-                        <ul class="tag-list-mini" aria-label="Teknologi Proyek Sibayak">
-                            <li>BPMN Modeling</li><li>Sistem Informasi</li><li>Analisis Sistem</li>
-                        </ul>
+                        <dl class="project-metadata"><dt>Mata Kuliah:</dt><dd>ANAPRANCIS</dd><dt>Peran:</dt><dd>Lead System Analyst &amp; BPMN Modeler</dd></dl>
+                        <ul class="tag-list-mini" aria-label="Teknologi Proyek Sibayak"><li>BPMN Modeling</li><li>Sistem Informasi</li><li>Analisis Sistem</li></ul>
                     </article>
-
                     <article class="project-card">
                         <div class="project-badge">UI/UX &amp; Interaksi Manusia Komputer</div>
                         <h3 class="project-title">Perancangan UI/UX Aplikasi Buku KIA &amp; Imunisasi</h3>
                         <p class="project-desc">Perancangan antarmuka mobile ramah pengguna untuk akses informasi imunisasi dasar lengkap. Mencakup arsitektur informasi, antarmuka visual, dan style guide di Figma/FigJam.</p>
-                        <dl class="project-metadata">
-                            <dt>Mata Kuliah:</dt><dd>UI/UX Design</dd>
-                            <dt>Peran:</dt><dd>UI/UX Designer &amp; Prototyper</dd>
-                        </dl>
-                        <ul class="tag-list-mini" aria-label="Teknologi Proyek KIA">
-                            <li>Figma</li><li>FigJam</li><li>Style Guide</li><li>A11y</li>
-                        </ul>
+                        <dl class="project-metadata"><dt>Mata Kuliah:</dt><dd>UI/UX Design</dd><dt>Peran:</dt><dd>UI/UX Designer &amp; Prototyper</dd></dl>
+                        <ul class="tag-list-mini" aria-label="Teknologi Proyek KIA"><li>Figma</li><li>FigJam</li><li>Style Guide</li><li>A11y</li></ul>
                     </article>
-
                     <article class="project-card">
                         <div class="project-badge">Pemrograman Berorientasi Objek</div>
                         <h3 class="project-title">COOKIES IN YOUR HEART – Sistem Penjualan Cookies</h3>
                         <p class="project-desc">Aplikasi desktop berbasis Java untuk transaksi pembelian cookies. Menerapkan OOP, Java Collections, SQLite JDBC, dan Data Mapper dengan fitur CRUD, pencarian pembeli, dan cetak struk.</p>
-                        <dl class="project-metadata">
-                            <dt>Mata Kuliah:</dt><dd>Pemrograman Berorientasi Objek</dd>
-                            <dt>Peran:</dt><dd>Java Developer &amp; Database Designer</dd>
-                        </dl>
-                        <ul class="tag-list-mini" aria-label="Teknologi Proyek Cookies">
-                            <li>Java OOP</li><li>JDBC</li><li>SQLite</li><li>Data Mapper</li>
-                        </ul>
+                        <dl class="project-metadata"><dt>Mata Kuliah:</dt><dd>Pemrograman Berorientasi Objek</dd><dt>Peran:</dt><dd>Java Developer &amp; Database Designer</dd></dl>
+                        <ul class="tag-list-mini" aria-label="Teknologi Proyek Cookies"><li>Java OOP</li><li>JDBC</li><li>SQLite</li><li>Data Mapper</li></ul>
                     </article>
-
                     <article class="project-card">
                         <div class="project-badge">Pemograman dan Pengujian Aplikasi Web</div>
                         <h3 class="project-title">Website Profil Profesional &amp; Form Layanan Interaktif</h3>
                         <p class="project-desc">Pengembangan website single-page portofolio profil profesional (lab2_guided) menggunakan HTML5 Semantik, CSS Flexbox/Grid responsif, kepatuhan WCAG 2.2 AA, dan form layanan terpadu.</p>
-                        <dl class="project-metadata">
-                            <dt>Mata Kuliah:</dt><dd>Pemograman dan Pengujian Aplikasi Web</dd>
-                            <dt>Peran:</dt><dd>Full Frontend Web Developer</dd>
-                        </dl>
-                        <ul class="tag-list-mini" aria-label="Teknologi Proyek Portofolio">
-                            <li>HTML5 Semantic</li><li>CSS Grid &amp; Flexbox</li><li>WCAG 2.2 AA</li><li>Git</li>
-                        </ul>
+                        <dl class="project-metadata"><dt>Mata Kuliah:</dt><dd>Pemograman dan Pengujian Aplikasi Web</dd><dt>Peran:</dt><dd>Full Frontend Web Developer</dd></dl>
+                        <ul class="tag-list-mini" aria-label="Teknologi Proyek Portofolio"><li>HTML5 Semantic</li><li>CSS Grid &amp; Flexbox</li><li>WCAG 2.2 AA</li><li>Git</li></ul>
                     </article>
                 </div>
 
-                <!-- Tabel Data Semantik Lengkap (10 Proyek Nyata - 34 SKS) -->
+                <!-- Tabel Data Semantik (10 Proyek Nyata - 34 SKS) -->
                 <div id="rekapitulasi" class="table-showcase-container">
                     <header class="table-header-box">
                         <h3 class="table-heading">Tabel Rekapitulasi Capaian Akademik &amp; 10 Proyek Unggulan</h3>
                         <p class="table-subheading">Data riwayat mata kuliah dan pengerjaan proyek sistem informasi, rekayasa perangkat lunak, dan kecerdasan buatan Josef Christian Marpaung.</p>
                     </header>
-
                     <div class="responsive-table-wrapper" tabindex="0" role="region" aria-label="Tabel Rekapitulasi Capaian Proyek">
                         <table class="semantic-data-table">
-                            <caption class="visually-hidden">Rekapitulasi Historis 10 Proyek Akademik dan Hasil Evaluasi Mata Kuliah Josef Christian Marpaung (12S24036)</caption>
+                            <caption class="visually-hidden">Rekapitulasi 10 Proyek Akademik Josef Christian Marpaung (12S24036)</caption>
                             <thead>
                                 <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">Kode MK</th>
-                                    <th scope="col">Mata Kuliah / Konteks</th>
-                                    <th scope="col">Nama Proyek Terverifikasi</th>
-                                    <th scope="col">Peran / Fokus Teknis</th>
-                                    <th scope="col">Bobot SKS</th>
-                                    <th scope="col">Hasil Capaian</th>
+                                    <th scope="col">No</th><th scope="col">Kode MK</th><th scope="col">Mata Kuliah / Konteks</th>
+                                    <th scope="col">Nama Proyek Terverifikasi</th><th scope="col">Peran / Fokus Teknis</th>
+                                    <th scope="col">Bobot SKS</th><th scope="col">Hasil Capaian</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <th scope="row">IFS2102</th>
-                                    <td>Pemrograman Berorientasi Objek</td>
-                                    <td>COOKIES IN YOUR HEART – Sistem Penjualan Cookies</td>
-                                    <td>Java OOP, Collection Framework, SQLite JDBC</td>
-                                    <td>4 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <th scope="row">ISS3101</th>
-                                    <td>Analisis dan Perancangan Sistem</td>
-                                    <td>Sistem Penyewaan Alat Mendaki Gunung Sibayak</td>
-                                    <td>Lead Analyst, Booking Flow &amp; BPMN Modeling</td>
-                                    <td>4 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <th scope="row">ISS2101</th>
-                                    <td>Pemograman dan Pengujian Aplikasi Web</td>
-                                    <td>Website Profil Profesional &amp; Form Kontak (lab2_guided)</td>
-                                    <td>HTML5 Semantik, CSS Flexbox &amp; Grid, Form A11y, Git</td>
-                                    <td>4 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <th scope="row">ISS3201</th>
-                                    <td>Information System Project Management</td>
-                                    <td>Analisis Product Life Cycle Proyek Sistem Informasi</td>
-                                    <td>Analisis Predictive, Iterative, Incremental &amp; Hybrid</td>
-                                    <td>3 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <th scope="row">ISS3102</th>
-                                    <td>Kepemimpinan &amp; Manajemen Organisasi SI</td>
-                                    <td>Transformasi Sistem Informasi PT Nusantara Logistik Prima</td>
-                                    <td>Integrasi TMS, AI Forecasting &amp; API E-commerce</td>
-                                    <td>3 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <th scope="row">ISS2203</th>
-                                    <td>UI/UX</td>
-                                    <td>Perancangan UI/UX Aplikasi Buku KIA &amp; Imunisasi</td>
-                                    <td>Information Architecture, Visual Style Guide Figma</td>
-                                    <td>3 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <th scope="row">ISS2102</th>
-                                    <td>Basis Data</td>
-                                    <td>Database Trigger – Sistem Perpustakaan</td>
-                                    <td>Konsistensi Transaksi &amp; Pengurangan Stok Otomatis</td>
-                                    <td>4 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <th scope="row">IFS3104</th>
-                                    <td>Artificial Intelligence</td>
-                                    <td>Praktikum AI – Fondasi Python untuk AI</td>
-                                    <td>Manipulasi Komputasi NumPy, Pandas &amp; Statistik</td>
-                                    <td>3 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <th scope="row">IFS2205</th>
-                                    <td>Jaringan Komputer</td>
-                                    <td>Analisis Jaringan dengan Wireshark</td>
-                                    <td>Inspeksi Traffic HTTP 304, DNS nslookup, Ping TTL</td>
-                                    <td>3 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <th scope="row">IFS2103</th>
-                                    <td>Sistem Operasi</td>
-                                    <td>Program IPC &amp; Manajemen Memori</td>
-                                    <td>Inter-Process Communication, FIFO, malloc/calloc</td>
-                                    <td>3 SKS</td>
-                                    <td><span class="badge-grade">A (Istimewa)</span></td>
-                                </tr>
+                                <tr><td>1</td><th scope="row">IFS2102</th><td>Pemrograman Berorientasi Objek</td><td>COOKIES IN YOUR HEART – Sistem Penjualan Cookies</td><td>Java OOP, Collection Framework, SQLite JDBC</td><td>4 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>2</td><th scope="row">ISS3101</th><td>Analisis dan Perancangan Sistem</td><td>Sistem Penyewaan Alat Mendaki Gunung Sibayak</td><td>Lead Analyst, Booking Flow &amp; BPMN Modeling</td><td>4 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>3</td><th scope="row">ISS2101</th><td>Pemograman dan Pengujian Aplikasi Web</td><td>Website Profil Profesional &amp; Form Kontak (lab2_guided)</td><td>HTML5 Semantik, CSS Flexbox &amp; Grid, Form A11y, Git</td><td>4 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>4</td><th scope="row">ISS3201</th><td>Information System Project Management</td><td>Analisis Product Life Cycle Proyek Sistem Informasi</td><td>Analisis Predictive, Iterative, Incremental &amp; Hybrid</td><td>3 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>5</td><th scope="row">ISS3102</th><td>Kepemimpinan &amp; Manajemen Organisasi SI</td><td>Transformasi Sistem Informasi PT Nusantara Logistik Prima</td><td>Integrasi TMS, AI Forecasting &amp; API E-commerce</td><td>3 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>6</td><th scope="row">ISS2203</th><td>UI/UX</td><td>Perancangan UI/UX Aplikasi Buku KIA &amp; Imunisasi</td><td>Information Architecture, Visual Style Guide Figma</td><td>3 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>7</td><th scope="row">ISS2102</th><td>Basis Data</td><td>Database Trigger – Sistem Perpustakaan</td><td>Konsistensi Transaksi &amp; Pengurangan Stok Otomatis</td><td>4 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>8</td><th scope="row">IFS3104</th><td>Artificial Intelligence</td><td>Praktikum AI – Fondasi Python untuk AI</td><td>Manipulasi Komputasi NumPy, Pandas &amp; Statistik</td><td>3 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>9</td><th scope="row">IFS2205</th><td>Jaringan Komputer</td><td>Analisis Jaringan dengan Wireshark</td><td>Inspeksi Traffic HTTP 304, DNS nslookup, Ping TTL</td><td>3 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
+                                <tr><td>10</td><th scope="row">IFS2103</th><td>Sistem Operasi</td><td>Program IPC &amp; Manajemen Memori</td><td>Inter-Process Communication, FIFO, malloc/calloc</td><td>3 SKS</td><td><span class="badge-grade">A (Istimewa)</span></td></tr>
                             </tbody>
                             <tfoot>
                                 <tr>
@@ -334,89 +222,59 @@
                     <p class="section-lead">Membutuhkan audit aksesibilitas, perancangan antarmuka semantik, perancangan sistem informasi (ANAPRANCIS), atau konsultasi proses bisnis (MANPROBIS/MPSI)? Lengkapi formulir di bawah ini.</p>
                 </header>
 
-                <!-- HTML List: Ordered List (ol) untuk Alur Tahapan Konsultasi -->
+                <!-- Alur Proses Konsultasi (Ordered List: ol) -->
                 <div class="process-flow-block">
                     <h3 class="process-title">Alur Standar Pelayanan &amp; Konsultasi Proyek</h3>
                     <ol class="flow-step-list">
                         <li class="flow-step-item">
                             <div class="step-badge" aria-hidden="true">1</div>
-                            <div class="step-content">
-                                <strong class="step-name">Pengisian Kebutuhan</strong>
-                                <p class="step-desc">Klien mengisi identitas, kategori pemesan, serta spesifikasi teknis layanan yang diperlukan.</p>
-                            </div>
+                            <div class="step-content"><strong class="step-name">Pengisian Kebutuhan</strong><p class="step-desc">Klien mengisi identitas, kategori pemesan, serta spesifikasi teknis layanan yang diperlukan.</p></div>
                         </li>
                         <li class="flow-step-item">
                             <div class="step-badge" aria-hidden="true">2</div>
-                            <div class="step-content">
-                                <strong class="step-name">Telaah &amp; Konfirmasi</strong>
-                                <p class="step-desc">Analisis kelayakan proyek dan konfirmasi jadwal resmi melalui email/WhatsApp dalam 1x24 jam.</p>
-                            </div>
+                            <div class="step-content"><strong class="step-name">Telaah &amp; Konfirmasi</strong><p class="step-desc">Analisis kelayakan proyek dan konfirmasi jadwal resmi melalui email/WhatsApp dalam 1x24 jam.</p></div>
                         </li>
                         <li class="flow-step-item">
                             <div class="step-badge" aria-hidden="true">3</div>
-                            <div class="step-content">
-                                <strong class="step-name">Penyusunan Solusi &amp; Desain</strong>
-                                <p class="step-desc">Pembuatan arsitektur antarmuka semantik, analisis alur proses, dan pengujian audit kepatuhan WCAG.</p>
-                            </div>
+                            <div class="step-content"><strong class="step-name">Penyusunan Solusi &amp; Desain</strong><p class="step-desc">Pembuatan arsitektur antarmuka semantik, analisis alur proses, dan pengujian kepatuhan WCAG.</p></div>
                         </li>
                         <li class="flow-step-item">
                             <div class="step-badge" aria-hidden="true">4</div>
-                            <div class="step-content">
-                                <strong class="step-name">Serah Terima &amp; Dokumentasi</strong>
-                                <p class="step-desc">Penyerahan seluruh berkas kode terverifikasi W3C serta petunjuk pemeliharaan sistem.</p>
-                            </div>
+                            <div class="step-content"><strong class="step-name">Serah Terima &amp; Dokumentasi</strong><p class="step-desc">Penyerahan seluruh berkas kode terverifikasi W3C serta petunjuk pemeliharaan sistem.</p></div>
                         </li>
                     </ol>
                 </div>
 
-                <!-- Formulir Interaktif & Accessible (Lengkap 8 Kontrol Input, 2 Fieldset) -->
+                <!-- Formulir Interaktif & Accessible (8 Kontrol Input, 2 Fieldset) -->
                 <form action="#layanan" method="POST" class="consultation-form" novalidate>
-                    
                     <!-- FIELDSET 1: IDENTITAS & KONTAK PEMESAN -->
                     <fieldset class="form-fieldset">
                         <legend class="fieldset-legend">1. Identitas &amp; Kontak Pemesan Layanan</legend>
                         <p class="fieldset-helper-text">Informasi ini digunakan untuk korespondensi resmi dan konfirmasi jadwal sesi konsultasi bersama Josef Christian Marpaung.</p>
-
                         <div class="form-grid-two">
-                            <!-- Input Tipe 1: Text -->
                             <div class="form-field-group">
                                 <label for="client-name" class="field-label">Nama Lengkap <span class="required-mark" aria-hidden="true">*</span></label>
-                                <input type="text" id="client-name" name="client-name" class="form-input" required minlength="3" maxlength="60" placeholder="Contoh: Budi Pratama" autocomplete="name" title="Nama lengkap minimal 3 karakter">
-                                <span class="field-hint">Minimal 3 karakter, sesuai identitas resmi pemesan.</span>
+                                <input type="text" id="client-name" name="client-name" class="form-input" required minlength="3" maxlength="60" placeholder="Contoh: Budi Pratama" autocomplete="name">
+                                <span class="field-hint">Minimal 3 karakter, sesuai identitas resmi.</span>
                             </div>
-
-                            <!-- Input Tipe 2: Email -->
                             <div class="form-field-group">
                                 <label for="client-email" class="field-label">Alamat Email Resmi <span class="required-mark" aria-hidden="true">*</span></label>
-                                <input type="email" id="client-email" name="client-email" class="form-input" required placeholder="pemesan@institusi.ac.id" autocomplete="email" title="Format alamat email valid (user@domain.com)">
+                                <input type="email" id="client-email" name="client-email" class="form-input" required placeholder="pemesan@institusi.ac.id" autocomplete="email">
                                 <span class="field-hint">Alamat email aktif untuk balasan proposal dan konfirmasi jadwal.</span>
                             </div>
                         </div>
-
                         <div class="form-grid-two">
-                            <!-- Input Tipe 3: Tel -->
                             <div class="form-field-group">
                                 <label for="client-phone" class="field-label">Nomor Telepon / WhatsApp <span class="required-mark" aria-hidden="true">*</span></label>
-                                <input type="tel" id="client-phone" name="client-phone" class="form-input" required pattern="[0-9]{10,14}" placeholder="081234567890" autocomplete="tel" title="10-14 digit angka aktif">
-                                <span class="field-hint">Format 10-14 digit angka aktif untuk koordinasi cepat via WhatsApp.</span>
+                                <input type="tel" id="client-phone" name="client-phone" class="form-input" required pattern="[0-9]{10,14}" placeholder="081234567890" autocomplete="tel">
+                                <span class="field-hint">Format 10-14 digit angka aktif untuk koordinasi via WhatsApp.</span>
                             </div>
-
-                            <!-- Input Tipe 4: Radio Buttons -->
                             <div class="form-field-group">
                                 <span id="label-kategori" class="field-label">Kategori Klien / Pemesan <span class="required-mark" aria-hidden="true">*</span></span>
                                 <div class="radio-options-group" role="radiogroup" aria-labelledby="label-kategori">
-                                    <label class="radio-inline-label" for="client-cat-mahasiswa">
-                                        <input type="radio" id="client-cat-mahasiswa" name="client-category" value="mahasiswa" checked required>
-                                        <span>Mahasiswa / Rekan Proyek Tim</span>
-                                    </label>
-                                    <label class="radio-inline-label" for="client-cat-dosen">
-                                        <input type="radio" id="client-cat-dosen" name="client-category" value="akademisi">
-                                        <span>Dosen / Peneliti Akademik</span>
-                                    </label>
-                                    <label class="radio-inline-label" for="client-cat-industri">
-                                        <input type="radio" id="client-cat-industri" name="client-category" value="industri">
-                                        <span>Institusi / Startup &amp; Bisnis</span>
-                                    </label>
+                                    <label class="radio-inline-label" for="client-cat-mahasiswa"><input type="radio" id="client-cat-mahasiswa" name="client-category" value="mahasiswa" checked required> <span>Mahasiswa / Rekan Proyek Tim</span></label>
+                                    <label class="radio-inline-label" for="client-cat-dosen"><input type="radio" id="client-cat-dosen" name="client-category" value="akademisi"> <span>Dosen / Peneliti Akademik</span></label>
+                                    <label class="radio-inline-label" for="client-cat-industri"><input type="radio" id="client-cat-industri" name="client-category" value="industri"> <span>Institusi / Startup &amp; Bisnis</span></label>
                                 </div>
                             </div>
                         </div>
@@ -426,9 +284,7 @@
                     <fieldset class="form-fieldset">
                         <legend class="fieldset-legend">2. Spesifikasi Teknis &amp; Rincian Proyek</legend>
                         <p class="fieldset-helper-text">Tentukan fokus layanan konsultasi yang dibutuhkan, estimasi durasi waktu, serta fitur pelengkap sistem.</p>
-
                         <div class="form-grid-two">
-                            <!-- Input Tipe 5: Select Dropdown -->
                             <div class="form-field-group">
                                 <label for="service-package" class="field-label">Pilihan Paket Layanan <span class="required-mark" aria-hidden="true">*</span></label>
                                 <select id="service-package" name="service-package" class="form-select" required>
@@ -441,42 +297,24 @@
                                 </select>
                                 <span class="field-hint">Pilih ruang lingkup utama pekerjaan yang akan dikolaborasikan.</span>
                             </div>
-
-                            <!-- Input Tipe 6: Number -->
                             <div class="form-field-group">
                                 <label for="duration-days" class="field-label">Estimasi Durasi Pengerjaan (Hari) <span class="required-mark" aria-hidden="true">*</span></label>
-                                <input type="number" id="duration-days" name="duration-days" class="form-input" min="3" max="90" value="14" required title="Rentang 3 hingga 90 hari">
-                                <span class="field-hint">Rentang batas pengerjaan: minimal 3 hari s.d. 90 hari kalender.</span>
+                                <input type="number" id="duration-days" name="duration-days" class="form-input" min="3" max="90" value="14" required>
+                                <span class="field-hint">Rentang batas pengerjaan: 3 s.d. 90 hari kalender.</span>
                             </div>
                         </div>
-
-                        <!-- Input Tipe 7: Checkbox Group -->
                         <div class="form-field-group">
                             <span id="label-addons" class="field-label">Fitur Kustomisasi &amp; Kebutuhan Tambahan</span>
                             <div class="checkbox-options-grid" aria-labelledby="label-addons">
-                                <label class="checkbox-inline-label" for="addon-wcag">
-                                    <input type="checkbox" id="addon-wcag" name="addon-features" value="wcag-audit" checked>
-                                    <span>Laporan Sertifikasi Audit WCAG 2.2 AA</span>
-                                </label>
-                                <label class="checkbox-inline-label" for="addon-mobile">
-                                    <input type="checkbox" id="addon-mobile" name="addon-features" value="mobile-first" checked>
-                                    <span>Pengujian Responsif Lintas Resolusi Layar</span>
-                                </label>
-                                <label class="checkbox-inline-label" for="addon-docs">
-                                    <input type="checkbox" id="addon-docs" name="addon-features" value="code-docs">
-                                    <span>Dokumentasi Analisis Sistem &amp; Panduan Teknis</span>
-                                </label>
-                                <label class="checkbox-inline-label" for="addon-bpm">
-                                    <input type="checkbox" id="addon-bpm" name="addon-features" value="bpmn-flow">
-                                    <span>Diagram Alir Proses Bisnis Standar BPMN</span>
-                                </label>
+                                <label class="checkbox-inline-label" for="addon-wcag"><input type="checkbox" id="addon-wcag" name="addon-features" value="wcag-audit" checked> <span>Laporan Sertifikasi Audit WCAG 2.2 AA</span></label>
+                                <label class="checkbox-inline-label" for="addon-mobile"><input type="checkbox" id="addon-mobile" name="addon-features" value="mobile-first" checked> <span>Pengujian Responsif Lintas Resolusi Layar</span></label>
+                                <label class="checkbox-inline-label" for="addon-docs"><input type="checkbox" id="addon-docs" name="addon-features" value="code-docs"> <span>Dokumentasi Analisis Sistem &amp; Panduan Teknis</span></label>
+                                <label class="checkbox-inline-label" for="addon-bpm"><input type="checkbox" id="addon-bpm" name="addon-features" value="bpmn-flow"> <span>Diagram Alir Proses Bisnis Standar BPMN</span></label>
                             </div>
                         </div>
-
-                        <!-- Input Tipe 8: Textarea -->
                         <div class="form-field-group">
                             <label for="project-brief" class="field-label">Rincian Deskripsi Proyek / Catatan Khusus <span class="required-mark" aria-hidden="true">*</span></label>
-                            <textarea id="project-brief" name="project-brief" class="form-textarea" rows="4" required minlength="20" maxlength="800" placeholder="Jelaskan deskripsi masalah, modul sistem yang ingin dibangun, target pengguna, atau tautan repositori..." title="Minimal 20 karakter"></textarea>
+                            <textarea id="project-brief" name="project-brief" class="form-textarea" rows="4" required minlength="20" maxlength="800" placeholder="Jelaskan ringkasan kebutuhan, modul sistem, target pengguna, atau tautan repositori..."></textarea>
                             <span class="field-hint">Minimal 20 karakter untuk mempermudah analisis alur sistem.</span>
                         </div>
                     </fieldset>
@@ -492,8 +330,6 @@
 
         <!-- 3. ASIDE / SIDEBAR SEMANTIK -->
         <aside class="site-sidebar" aria-label="Informasi Tambahan dan Status Pengembang">
-
-            <!-- Widget Status Akademik (HTML Description List: dl, dt, dd) -->
             <article class="sidebar-widget-card">
                 <h3 class="widget-title">Identitas Akademik</h3>
                 <dl class="academic-info-list">
@@ -505,7 +341,6 @@
                 </dl>
             </article>
 
-            <!-- Widget Jadwal Konsultasi (HTML Unordered List: ul, li) -->
             <article class="sidebar-widget-card">
                 <h3 class="widget-title">Ketersediaan Konsultasi</h3>
                 <p class="widget-text">Sesi diskusi langsung di Lab Rekayasa Web &amp; Sistem Informasi atau tatap maya via Google Meet:</p>
@@ -514,39 +349,28 @@
                     <li><span class="day-name">Jumat:</span><time class="time-range">14.00 &ndash; 17.30 WIB</time></li>
                     <li><span class="day-name">Sabtu &ndash; Minggu:</span><span class="time-range">Dengan Perjanjian</span></li>
                 </ul>
-                <div class="sidebar-callout">
-                    <strong>Waktu Respon Cepat:</strong> Balasan pesan resmi dilakukan maksimal 24 jam hari kerja.
-                </div>
+                <div class="sidebar-callout"><strong>Waktu Respon Cepat:</strong> Balasan pesan resmi dilakukan maksimal 24 jam kerja.</div>
             </article>
 
-            <!-- Widget Unduhan Dokumen -->
             <article class="sidebar-widget-card">
                 <h3 class="widget-title">Unduhan Dokumen</h3>
                 <p class="widget-text">Akses ringkasan portofolio dan resume resmi Josef Christian Marpaung format PDF:</p>
                 <div class="download-links-group">
-                    <a href="#tentang" class="btn btn-download" download aria-label="Unduh CV format PDF">
-                        <span class="download-icon" aria-hidden="true">&#128196;</span>
-                        <span>Unduh Curriculum Vitae (.PDF)</span>
-                    </a>
-                    <a href="#rekapitulasi" class="btn btn-download" download aria-label="Unduh Transkrip Nilai format PDF">
-                        <span class="download-icon" aria-hidden="true">&#128202;</span>
-                        <span>Transkrip Capaian Proyek (.PDF)</span>
-                    </a>
+                    <a href="#tentang" class="btn btn-download" download aria-label="Unduh CV format PDF"><span class="download-icon" aria-hidden="true">&#128196;</span> <span>Unduh Curriculum Vitae (.PDF)</span></a>
+                    <a href="#rekapitulasi" class="btn btn-download" download aria-label="Unduh Transkrip Nilai format PDF"><span class="download-icon" aria-hidden="true">&#128202;</span> <span>Transkrip Capaian Proyek (.PDF)</span></a>
                 </div>
             </article>
 
-            <!-- Widget Verifikasi Lab -->
             <article class="sidebar-widget-card accreditation-card">
                 <h3 class="widget-title">Verifikasi Tugas Mandiri</h3>
                 <p class="widget-text">Halaman ini dikembangkan sebagai pemenuhan <strong>Tugas Mandiri Lab 2: Pengembangan Pemrograman Web</strong>, S1 Sistem Informasi IT Del.</p>
                 <div class="badge-accreditation">Kepatuhan Penuh Standar W3C &amp; WCAG 2.2 AA</div>
             </article>
-
         </aside>
 
     </div>
 
-    <!-- 4. FOOTER SEMANTIK (Bobot 20%) -->
+    <!-- 4. FOOTER SEMANTIK -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-column footer-brand-column">
