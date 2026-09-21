@@ -1,6 +1,6 @@
 # Portofolio Profil Mahasiswa - Single Page Web
 **Tugas Mandiri Lab 2: Pemograman dan Pengujian Aplikasi Web (PPW)**  
-Institut Teknologi Del &middot; S1 Sistem Informasi  
+Institut Teknologi Del S1 Sistem Informasi  
 
 * **Nama:** Josef Christian Marpaung  
 * **NIM:** 12S24036  
