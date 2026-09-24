@@ -1,0 +1,182 @@
+/* ==========================================================================
+   TUGAS MANDIRI MINGGU 3 - PPW (12S3101)
+   Nama   : Josef Christian Marpaung | NIM: 12S24036 | S1 Sistem Informasi
+   Berkas : custom-style.css (Custom CSS Overrides & Theming)
+   Standar: Minimal 6 Variabel di :root, Lab 1 Pseudo-Element, Zero !important
+   ========================================================================== */
+
+/* 1. CSS CUSTOM PROPERTIES / VARIABLES (Scope :root - Memenuhi Butir 5) */
+:root {
+    --primary-brand: #0284c7;       /* 1. Warna brand utama personal (Sky Blue) */
+    --primary-hover: #0369a1;       /* 2. State hover interaktif */
+    --accent-cyan: #38bdf8;         /* 3. Aksen kontras */
+    --surface-bg: #ffffff;          /* 4. Latar kartu & permukaan */
+    --bg-light: #f8fafc;            /* 5. Latar section netral */
+    --border-color: #e2e8f0;        /* 6. Garis batas elemen */
+    --card-radius: 16px;            /* 7. Radius kelengkungan kartu */
+    --shadow-lift: 0 14px 28px -4px rgba(15, 23, 42, 0.1); /* 8. Bayangan elevasi */
+    --transition-speed: 0.25s ease; /* 9. Durasi transisi halus */
+}
+
+/* 2. GLOBAL & UTILITY */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #334155;
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+/* Aksesibilitas WCAG: Skip Link & Focus */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    background: #0f172a;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    z-index: 2000;
+    transition: top var(--transition-speed);
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 16px;
+    color: #ffffff;
+}
+:focus-visible {
+    outline: 3px solid var(--primary-brand);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* 3. NAVBAR OVERRIDES */
+.navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: -0.3px;
+}
+.nav-link {
+    font-weight: 500;
+    transition: color var(--transition-speed);
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-cyan);
+}
+
+/* 4. HERO SECTION STYLING */
+.hero-section {
+    background: linear-gradient(135deg, #0b1329 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 70px 0 60px 0;
+}
+.hero-avatar {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* 5. MIKRO-INTERAKSI KARTU & METRIK (Lab 1: Pseudo-Element ::before) */
+.custom-card, .metric-card {
+    position: relative;
+    background-color: var(--surface-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+.custom-card:hover, .metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lift);
+}
+/* Lab 1: Garis aksen meluncur saat hover */
+.custom-card::before, .metric-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-brand), var(--accent-cyan));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.custom-card:hover::before, .metric-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Kartu Metrik Lab 1 */
+.metric-card {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.metric-icon {
+    font-size: 2rem;
+    color: var(--primary-brand);
+}
+.metric-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.metric-value {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0f172a;
+    display: block;
+}
+
+/* 6. TOMBOL BRAND KUSTOM */
+.btn-brand {
+    background-color: var(--primary-brand);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    transition: all var(--transition-speed);
+}
+.btn-brand:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+}
+
+/* 7. FORMULIR OVERRIDES */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: var(--primary-brand);
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-brand);
+    box-shadow: 0 0 0 0.25rem rgba(2, 132, 199, 0.2);
+}
+
+/* 8. MODAL KUSTOM */
+.modal-content {
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border-color);
+}
+.modal-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+}
+
+/* 9. FOOTER STYLING */
+.site-footer {
+    background-color: #0b1329;
+    color: #94a3b8;
+}
+.site-footer a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+.site-footer a:hover {
+    text-decoration: underline;
+}
