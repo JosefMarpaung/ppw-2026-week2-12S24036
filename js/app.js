@@ -162,10 +162,12 @@ const App = {
       return `
         <div class="col-md-6 col-lg-6 mb-4">
           <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-            <div class="position-relative overflow-hidden ratio ratio-16x9">
-              <img src="${proj.thumbnail}" class="card-img-top object-fit-cover"
-                   alt="${title}" loading="lazy">
-              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">
+            <div class="position-relative overflow-hidden">
+              <div class="ratio ratio-16x9">
+                <img src="${proj.thumbnail}" class="card-img-top object-fit-cover"
+                     alt="${title}" loading="lazy">
+              </div>
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill shadow-sm" style="z-index: 2;">
                 ${category}
               </span>
             </div>
