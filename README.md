@@ -39,6 +39,13 @@ Pada **Minggu 3**, halaman ini direfaktor secara menyeluruh menggunakan **Bootst
 | **Aksesibilitas** | WCAG 2.2 AA (skip-link, `:focus-visible`) | Dipertahankan + Bootstrap aria-attribute bawaan |
 | **Jumlah File CSS** | 1 file (`style.css`) | 2 file (`custom-style.css` override + Bootstrap CDN) |
 
+### Dokumentasi Visual (Screenshot Komparasi)
+
+| ⬅️ Sebelum (Minggu 2 - Pure CSS) | ➡️ Sesudah (Minggu 3 - Bootstrap 5) |
+|:---:|:---:|
+| ![Sebelum Integrasi Framework](assets/sebelum-week2-purecss.png) | ![Sesudah Integrasi Bootstrap 5](assets/sesudah-week3-bootstrap.png) |
+| *Tampilan awal portofolio berbasis Pure CSS & CSS Grid manual* | *Tampilan baru dengan Bootstrap 5 Navbar, Hero, dan Grid* |
+
 ---
 
 ## Checklist Spesifikasi Modul Lab 3 (Week 3)
@@ -68,12 +75,15 @@ Halaman ini sudah memenuhi seluruh kriteria penilaian Lab 3:
 
 ```text
 ppw-2026-week2-12S24036/
-├── index.html          # File utama halaman web (Week 2 + direfaktor Week 3)
-├── style.css           # CSS kustom murni Week 2 (pure CSS, tanpa framework)
-├── custom-style.css    # CSS override kustom Week 3 (di atas Bootstrap 5)
-├── profile.jpg         # Foto profil resmi pengembang
-├── .gitignore          # Mengabaikan folder .vscode dari version control
-└── README.md           # Dokumentasi lengkap tugas minggu 2 & 3
+├── assets/
+│   ├── sebelum-week2-purecss.png   # Tangkapan layar portofolio Minggu 2 (Pure CSS)
+│   └── sesudah-week3-bootstrap.png # Tangkapan layar portofolio Minggu 3 (Bootstrap 5)
+├── index.html                      # File utama halaman web (Week 2 + direfaktor Week 3)
+├── style.css                       # CSS kustom murni Week 2 (pure CSS, tanpa framework)
+├── custom-style.css                # CSS override kustom Week 3 (di atas Bootstrap 5)
+├── profile.jpg                     # Foto profil resmi pengembang
+├── .gitignore                      # Mengabaikan folder .vscode dari version control
+└── README.md                       # Dokumentasi lengkap tugas minggu 2 & 3
 ```
 
 ---
