@@ -1,0 +1,53 @@
+{
+  "skillsSummary": [
+    "HTML5 & Modern CSS",
+    "UI/UX & Figma",
+    "Java OOP & SQLite JDBC",
+    "Basis Data & SQL Trigger",
+    "Pemodelan BPMN & Analisis Sistem",
+    "Python (NumPy & Pandas)",
+    "Analisis Jaringan (Wireshark)",
+    "Sistem Operasi (C & IPC)",
+    "Manajemen Proyek SI (ISPM)",
+    "Git & GitHub"
+  ],
+  "stats": [
+    { "val": "3.14", "lbl": "IPK" },
+    { "val": "34",   "lbl": "SKS Keahlian" },
+    { "val": "10",   "lbl": "Proyek Terdata" },
+    { "val": "100%", "lbl": "A11y (WCAG)" }
+  ],
+  "categories": [
+    {
+      "title": "Rekayasa Web & Desain Antarmuka",
+      "icon": "bi-globe",
+      "skills": [
+        "HTML5 Semantic & Modern CSS (Flexbox / Grid)",
+        "Bootstrap 5.3 Framework & Responsive Grid",
+        "UI/UX Design, Wireframing & Prototyping (Figma / FigJam)",
+        "Standar Aksesibilitas Web (WCAG 2.2 Level AA)",
+        "Pengujian Antarmuka & Kontrol Versi (Git & GitHub)"
+      ]
+    },
+    {
+      "title": "Pemrograman, Basis Data & AI",
+      "icon": "bi-cpu",
+      "skills": [
+        "Java Object-Oriented Programming (OOP & SQLite JDBC)",
+        "Basis Data Relasional & SQL Database Triggers",
+        "Python, NumPy & Pandas (Exploratory Data Analysis)",
+        "Arsitektur Data Mapper & Integritas Transaksi Data"
+      ]
+    },
+    {
+      "title": "Sistem, Jaringan & Manajemen Proyek",
+      "icon": "bi-diagram-3",
+      "skills": [
+        "Pemodelan Alur Bisnis & Sistem Reservasi (BPMN)",
+        "Manajemen Siklus Hidup Proyek SI (PLC & Agile Framework)",
+        "Inspeksi Protokol Jaringan Komputer (Wireshark & TCP/IP)",
+        "Sistem Operasi C (IPC Pipes & Manajemen Memori)"
+      ]
+    }
+  ]
+}

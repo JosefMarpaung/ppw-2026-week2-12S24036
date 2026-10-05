@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ui-ux-design",
+    "name": "Perancangan UI/UX & Prototyping Antarmuka Web",
+    "description": "Perancangan wireframe, interactive prototype, dan style guide di Figma dengan fokus pada estetika dan kepatuhan usability standar industri.",
+    "price": "Mulai Rp 500.000 / modul",
+    "duration": "7 - 14 Hari",
+    "features": [
+      "Figma Component Library",
+      "Interactive Flow Prototype",
+      "Design System & Tokens",
+      "Pengujian Usability Awal"
+    ]
+  },
+  {
+    "id": "anaprancis-sys",
+    "name": "Analisis & Perancangan Sistem Informasi (ANAPRANCIS)",
+    "description": "Dokumentasi spesifikasi kebutuhan perangkat lunak (SRS), use case modeling, ERD, dan arsitektur sistem berbasis standar rekayasa perangkat lunak.",
+    "price": "Mulai Rp 750.000 / sistem",
+    "duration": "10 - 21 Hari",
+    "features": [
+      "Dokumentasi SRS & Use Case",
+      "Pemodelan Data Relasional / ERD",
+      "Arsitektur Sistem Multi-Tier",
+      "Kamus Data Terstruktur"
+    ]
+  },
+  {
+    "id": "manprobis-bpm",
+    "name": "Optimasi Alur Proses Bisnis & BPMN (MANPROBIS)",
+    "description": "Pemetaan dan evaluasi alur kerja organisasi menggunakan notasi standar BPMN 2.0 untuk eliminasi bottleneck operasional.",
+    "price": "Mulai Rp 450.000 / proses",
+    "duration": "5 - 10 Hari",
+    "features": [
+      "Diagram Alir BPMN 2.0",
+      "Analisis GAP & Bottleneck",
+      "Rekomendasi Efisiensi Alur",
+      "Standar Operasional Prosedur (SOP)"
+    ]
+  },
+  {
+    "id": "semantic-web",
+    "name": "Pengembangan Web Semantik & Aksesibilitas WCAG",
+    "description": "Pembuatan frontend web modular HTML5 semantik, modern CSS, kepatuhan WCAG 2.2 AA, dan Client-Side Rendering teroptimasi.",
+    "price": "Mulai Rp 800.000 / portal",
+    "duration": "14 - 30 Hari",
+    "features": [
+      "HTML5 Semantik & Modern CSS",
+      "Kepatuhan WCAG 2.2 AA",
+      "Client-Side Rendering (CSR)",
+      "Audit DevTools & Lighthouse"
+    ]
+  }
+]

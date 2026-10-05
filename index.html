@@ -7,29 +7,42 @@
     <meta name="keywords" content="Portofolio, Josef Christian Marpaung, Sistem Informasi, IT Del, Web Developer, WCAG 2.2">
     <meta name="author" content="Josef Christian Marpaung">
     <title>Josef Christian Marpaung | Web Developer &amp; Mahasiswa S1 Sistem Informasi IT Del</title>
+
     <!-- Bootstrap 5.3.3 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Custom CSS Overrides (Wajib dimuat SETELAH Bootstrap) -->
+    <!-- Custom CSS (dimuat SETELAH Bootstrap agar override bisa bekerja) -->
     <link rel="stylesheet" href="custom-style.css">
 </head>
 <body id="top">
 
-    <!-- Aksesibilitas WCAG: Skip Link -->
+    <!-- =====================================================================
+         AKSESIBILITAS WCAG: SKIP LINK
+         Memungkinkan pengguna pembaca layar melewati navigasi langsung ke konten
+         ===================================================================== -->
     <a href="#main-content" class="skip-link">Loncat langsung ke konten utama</a>
 
-    <!-- 1. HEADER & NAVIGASI SEMANTIK (Bootstrap 5 Responsive Navbar - Lab 2) -->
+    <!-- =====================================================================
+         1. HEADER & NAVBAR BOOTSTRAP 5 (Sticky, Responsive, Collapsible)
+         ===================================================================== -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3" aria-label="Navigasi Utama Portofolio">
             <div class="container">
+                <!-- Brand / Logo -->
                 <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#top">
                     <span class="badge bg-primary px-2 py-1 fs-6">JM</span>
                     <span>Josef Christian Marpaung<span class="text-primary">.Del</span></span>
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigasi">
+
+                <!-- Tombol hamburger untuk layar kecil (mobile) -->
+                <button class="navbar-toggler border-0" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigasi">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Menu navigasi -->
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
                         <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
@@ -37,14 +50,27 @@
                         <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#rekapitulasi">Rekapitulasi</a></li>
-                        <li class="nav-item ms-lg-2"><a class="btn btn-brand btn-sm px-3 py-2 text-white" href="#layanan">Layanan &amp; Kontak</a></li>
+
+                        <!-- Tombol CTA dengan badge pesanan reaktif
+                             id="orderCountBadge": angkanya diperbarui otomatis oleh
+                             App.updateOrderBadge() di app.js setiap ada pesanan baru masuk -->
+                        <li class="nav-item ms-lg-2 position-relative">
+                            <a class="btn btn-brand btn-sm px-3 py-2 text-white" href="#layanan">
+                                Layanan &amp; Kontak
+                                <span id="orderCountBadge"
+                                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                      style="display:none; font-size:0.65rem;">0</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- HERO SECTION MULTI-KOLOM DENGAN CTA (Memenuhi Butir 2 & Lab 2) -->
+    <!-- =====================================================================
+         2. HERO SECTION
+         ===================================================================== -->
     <section id="hero" class="hero-section">
         <div class="container">
             <div class="row align-items-center g-4">
@@ -52,7 +78,8 @@
                     <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">Mahasiswa S1 Sistem Informasi &middot; Institut Teknologi Del</span>
                     <h1 class="display-5 fw-bold mb-3">Halo, Saya Josef Christian Marpaung</h1>
                     <p class="lead mb-4 text-light opacity-90">
-                        Junior Web Developer &amp; UI Designer yang berfokus pada rekayasa antarmuka responsif semantik, aksesibilitas inklusif (WCAG 2.2 AA), serta pemodelan alur proses bisnis terstruktur (ANAPRANCIS &amp; MANPROBIS).
+                        Junior Web Developer &amp; UI Designer yang berfokus pada rekayasa antarmuka responsif semantik,
+                        aksesibilitas inklusif (WCAG 2.2 AA), serta pemodelan alur proses bisnis terstruktur (ANAPRANCIS &amp; MANPROBIS).
                     </p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#portofolio" class="btn btn-brand"><i class="bi bi-briefcase me-2"></i>Lihat Portofolio Karya</a>
@@ -66,20 +93,26 @@
         </div>
     </section>
 
-    <!-- WRAPPER TATA LETAK UTAMA: CSS Grid (Main + Aside) -->
+    <!-- =====================================================================
+         WRAPPER TATA LETAK: CSS Grid (Main + Aside)
+         ===================================================================== -->
     <div class="layout-wrapper">
 
-        <!-- 2. KONTEN UTAMA SEMANTIK -->
+        <!-- ==================================================================
+             3. KONTEN UTAMA
+             ================================================================== -->
         <main id="main-content" class="primary-content">
 
-            <!-- SECTION 1: PROFIL PENGEMBANG -->
+            <!-- --------------------------------------------------------------
+                 SECTION: PROFIL PENGEMBANG
+                 -------------------------------------------------------------- -->
             <section id="tentang" class="content-section" aria-labelledby="heading-tentang">
                 <header class="section-intro">
                     <span class="section-kicker">Profil Pribadi</span>
                     <h1 id="heading-tentang" class="section-title">Identitas Akademik &amp; Developer Profile Card</h1>
                 </header>
 
-                <!-- Developer Profile Card (Format Hands-on Lab) -->
+                <!-- Kartu Profil Pengembang -->
                 <article class="profile-card">
                     <div class="card-header-banner" aria-hidden="true"></div>
                     <div class="card-body">
@@ -91,10 +124,13 @@
                         <p class="user-role">Mahasiswa S1 Sistem Informasi &middot; Junior Web Developer &amp; UI Designer</p>
                         <p class="user-institution">Fakultas Informatika dan Teknik Elektro &middot; Institut Teknologi Del (NIM: 12S24036)</p>
                         <p class="user-bio">
-                            Saya tertarik dengan membangun web dan aplikasi pada bagian tampilan antarmukanya melalui pendalaman mata kuliah UI/UX dan Analisis Perancangan Sistem Informasi (ANAPRANCIS). Saya juga memiliki ketertarikan tinggi dalam memanajemen proses bisnis yang sudah berjalan maupun inisiatif baru dengan menerapkan konsep Manajemen Proses Bisnis (MANPROBIS) serta Manajemen Proyek Sistem Informasi (MPSI).
+                            Saya tertarik dengan membangun web dan aplikasi pada bagian tampilan antarmukanya melalui pendalaman
+                            mata kuliah UI/UX dan Analisis Perancangan Sistem Informasi (ANAPRANCIS). Saya juga memiliki
+                            ketertarikan tinggi dalam memanajemen proses bisnis yang sudah berjalan maupun inisiatif baru
+                            dengan menerapkan konsep Manajemen Proses Bisnis (MANPROBIS) serta Manajemen Proyek Sistem Informasi (MPSI).
                         </p>
 
-                        <!-- Keahlian Utama (Sinkron 10 Proyek Nyata) -->
+                        <!-- Tag keahlian ringkas -->
                         <div class="skills-section">
                             <h3 class="section-title">Keahlian Utama</h3>
                             <ul class="skills-list" aria-label="Daftar Tag Keahlian Utama">
@@ -111,7 +147,7 @@
                             </ul>
                         </div>
 
-                        <!-- Statistik Capaian Akademik -->
+                        <!-- Statistik Akademik -->
                         <div class="stats-container" aria-label="Statistik Akademik">
                             <div class="stat-item"><span class="stat-val">3.14</span><span class="stat-lbl">IPK</span></div>
                             <div class="stat-item"><span class="stat-val">34</span><span class="stat-lbl">SKS Keahlian</span></div>
@@ -126,45 +162,28 @@
                     </div>
                 </article>
 
-                <!-- Galeri Keahlian Terstruktur (3 Kategori) -->
+                <!-- --------------------------------------------------------------
+                     GALERI KEAHLIAN — KONTAINER DINAMIS (Week 4)
+                     Kartu keahlian tidak ditulis manual di sini.
+                     app.js memanggil ApiService.fetchKeahlian() dari data/keahlian.json
+                     lalu merender hasilnya ke dalam div #keahlianContainer di bawah.
+                     -------------------------------------------------------------- -->
                 <div id="keahlian" class="sub-block">
                     <header class="sub-block-header">
                         <h2 class="sub-block-title">Galeri Keahlian &amp; Kompetensi Terstruktur</h2>
                         <p class="sub-block-desc">Klasifikasi kemahiran teknis yang teruji langsung dalam 10 proyek laboratorium dan analisis sistem informasi.</p>
                     </header>
-                    <div class="skills-category-grid">
-                        <article class="skill-category-card">
-                            <h3 class="skill-cat-title">Rekayasa Web &amp; Desain Antarmuka</h3>
-                            <ul class="tag-list" aria-label="Keahlian Web dan Desain UI/UX">
-                                <li class="tag-item">HTML5 Semantic &amp; Modern CSS (Flexbox / Grid)</li>
-                                <li class="tag-item">UI/UX Design, Wireframing &amp; Prototyping (Figma / FigJam)</li>
-                                <li class="tag-item">Standar Aksesibilitas Web (WCAG 2.2 Level AA)</li>
-                                <li class="tag-item">Pengujian Antarmuka &amp; Kontrol Versi (Git &amp; GitHub)</li>
-                            </ul>
-                        </article>
-                        <article class="skill-category-card">
-                            <h3 class="skill-cat-title">Pemrograman, Basis Data &amp; AI</h3>
-                            <ul class="tag-list" aria-label="Keahlian Pemrograman dan Data">
-                                <li class="tag-item">Java Object-Oriented Programming (OOP &amp; SQLite JDBC)</li>
-                                <li class="tag-item">Basis Data Relasional &amp; SQL Database Triggers</li>
-                                <li class="tag-item">Python, NumPy &amp; Pandas (Exploratory Data Analysis)</li>
-                                <li class="tag-item">Arsitektur Data Mapper &amp; Integritas Transaksi Data</li>
-                            </ul>
-                        </article>
-                        <article class="skill-category-card">
-                            <h3 class="skill-cat-title">Sistem, Jaringan &amp; Manajemen Proyek</h3>
-                            <ul class="tag-list" aria-label="Keahlian Sistem, Jaringan dan Manajemen">
-                                <li class="tag-item">Pemodelan Alur Bisnis &amp; Sistem Reservasi (BPMN)</li>
-                                <li class="tag-item">Manajemen Siklus Hidup Proyek SI (PLC &amp; Agile Framework)</li>
-                                <li class="tag-item">Inspeksi Protokol Jaringan Komputer (Wireshark &amp; TCP/IP)</li>
-                                <li class="tag-item">Sistem Operasi C (IPC Pipes &amp; Manajemen Memori)</li>
-                            </ul>
-                        </article>
+
+                    <!-- Kartu 3 kategori keahlian dirender di sini oleh App.renderKeahlian() -->
+                    <div id="keahlianContainer" class="row">
+                        <!-- Loading State tampil sementara data diambil dari keahlian.json -->
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION 2: PORTOFOLIO & TABEL REKAPITULASI (Bobot 15%) -->
+            <!-- --------------------------------------------------------------
+                 SECTION: PORTOFOLIO PROYEK
+                 -------------------------------------------------------------- -->
             <section id="portofolio" class="content-section" aria-labelledby="heading-portofolio">
                 <header class="section-intro">
                     <span class="section-kicker">Karya Nyata</span>
@@ -172,99 +191,31 @@
                     <p class="section-lead">Showcase proyek digital yang dibangun dengan mengintegrasikan antarmuka visual responsif, logika proses bisnis terstruktur, dan arsitektur kode semantik.</p>
                 </header>
 
-                <!-- Grid 4 Kartu Proyek Unggulan -->
-                <!-- Grid 4 Kartu Proyek Responsif (Memenuhi Butir 3: row-cols-1 row-cols-md-2 row-cols-lg-3 g-4) -->
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-                    <!-- Kartu 1: ANAPRANCIS -->
-                    <div class="col">
-                        <article class="card h-100 custom-card shadow-sm border-0">
-                            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-2 px-3">
-                                <span class="badge bg-primary">ANAPRANCIS</span>
-                                <small class="text-light opacity-75">4 SKS</small>
-                            </div>
-                            <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title h5 fw-bold text-dark mb-2">Sistem Penyewaan Alat Mendaki Gunung Sibayak</h3>
-                                <p class="card-text text-secondary small flex-grow-1">Perancangan sistem informasi modern pengganti pemesanan manual via WhatsApp/telepon dengan modul reservasi, stok fisik, dan alur proses standar BPMN.</p>
-                                <div class="d-flex flex-wrap gap-1 mb-3">
-                                    <span class="badge bg-light text-dark border">BPMN</span>
-                                    <span class="badge bg-light text-dark border">Analisis SI</span>
-                                    <span class="badge bg-light text-dark border">Reservasi</span>
-                                </div>
-                                <button type="button" class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyek1">
-                                    <i class="bi bi-info-circle me-1"></i>Detail Proyek &rarr;
-                                </button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Kartu 2: UI/UX Design -->
-                    <div class="col">
-                        <article class="card h-100 custom-card shadow-sm border-0">
-                            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-2 px-3">
-                                <span class="badge bg-info text-dark">UI/UX Design</span>
-                                <small class="text-light opacity-75">3 SKS</small>
-                            </div>
-                            <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title h5 fw-bold text-dark mb-2">Perancangan UI/UX Aplikasi Buku KIA &amp; Imunisasi</h3>
-                                <p class="card-text text-secondary small flex-grow-1">Perancangan antarmuka mobile ramah pengguna untuk akses informasi imunisasi dasar lengkap dengan arsitektur informasi dan style guide Figma.</p>
-                                <div class="d-flex flex-wrap gap-1 mb-3">
-                                    <span class="badge bg-light text-dark border">Figma</span>
-                                    <span class="badge bg-light text-dark border">FigJam</span>
-                                    <span class="badge bg-light text-dark border">WCAG 2.2</span>
-                                </div>
-                                <button type="button" class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyek2">
-                                    <i class="bi bi-info-circle me-1"></i>Detail Proyek &rarr;
-                                </button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Kartu 3: PBO Java -->
-                    <div class="col">
-                        <article class="card h-100 custom-card shadow-sm border-0">
-                            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-2 px-3">
-                                <span class="badge bg-success">PBO Java</span>
-                                <small class="text-light opacity-75">4 SKS</small>
-                            </div>
-                            <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title h5 fw-bold text-dark mb-2">COOKIES IN YOUR HEART &ndash; Penjualan Cookies</h3>
-                                <p class="card-text text-secondary small flex-grow-1">Aplikasi desktop berbasis Java OOP &amp; SQLite JDBC untuk transaksi kasir, manajemen inventori, pencarian data pembeli, dan cetak struk otomatis.</p>
-                                <div class="d-flex flex-wrap gap-1 mb-3">
-                                    <span class="badge bg-light text-dark border">Java OOP</span>
-                                    <span class="badge bg-light text-dark border">JDBC</span>
-                                    <span class="badge bg-light text-dark border">SQLite</span>
-                                </div>
-                                <button type="button" class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyek1">
-                                    <i class="bi bi-info-circle me-1"></i>Detail Proyek &rarr;
-                                </button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Kartu 4: Pemrograman Web -->
-                    <div class="col">
-                        <article class="card h-100 custom-card shadow-sm border-0">
-                            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-2 px-3">
-                                <span class="badge bg-warning text-dark">Rekayasa Web</span>
-                                <small class="text-light opacity-75">4 SKS</small>
-                            </div>
-                            <div class="card-body d-flex flex-column p-4">
-                                <h3 class="card-title h5 fw-bold text-dark mb-2">Website Profil Profesional &amp; Form Interaktif</h3>
-                                <p class="card-text text-secondary small flex-grow-1">Modernisasi portofolio showcase menggunakan ekosistem Bootstrap 5.3, custom CSS theming, komponen modal, floating labels, dan aksesibilitas WCAG 2.2 AA.</p>
-                                <div class="d-flex flex-wrap gap-1 mb-3">
-                                    <span class="badge bg-light text-dark border">Bootstrap 5</span>
-                                    <span class="badge bg-light text-dark border">HTML5</span>
-                                    <span class="badge bg-light text-dark border">Custom CSS</span>
-                                </div>
-                                <button type="button" class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyek2">
-                                    <i class="bi bi-info-circle me-1"></i>Detail Proyek &rarr;
-                                </button>
-                            </div>
-                        </article>
-                    </div>
+                <!-- TOMBOL FILTER KATEGORI (Client-Side Filtering)
+                     data-category: nilai ini dibaca oleh App.filterProjects() di app.js.
+                     Saat diklik, app.js menyaring array data proyek di memori browser
+                     tanpa memuat ulang halaman (tanpa reload). -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button class="btn btn-primary btn-sm btn-filter px-3 rounded-pill" data-category="all">Semua Proyek</button>
+                    <button class="btn btn-outline-primary btn-sm btn-filter px-3 rounded-pill" data-category="Analisis">Analisis Sistem</button>
+                    <button class="btn btn-outline-primary btn-sm btn-filter px-3 rounded-pill" data-category="UI/UX">UI/UX Design</button>
+                    <button class="btn btn-outline-primary btn-sm btn-filter px-3 rounded-pill" data-category="Pemrograman">Pemrograman</button>
+                    <button class="btn btn-outline-primary btn-sm btn-filter px-3 rounded-pill" data-category="Rekayasa Web">Rekayasa Web</button>
                 </div>
 
-                <!-- Tabel Data Semantik (10 Proyek Nyata - 34 SKS) -->
+                <!-- KONTAINER PROYEK DINAMIS (Week 4 — Client-Side Rendering)
+                     Kartu proyek tidak ditulis manual di sini (tidak ada hardcoded).
+                     app.js memanggil ApiService.fetchProjects() dari data/project.json
+                     lalu merender hasilnya ke dalam div #projectsContainer di bawah.
+                     4 UI States dikelola di sini: Loading, Success, Empty, Error. -->
+                <div id="projectsContainer" class="row">
+                    <!-- Kartu proyek dirender di sini oleh App.renderProjects() -->
+                </div>
+
+                <!-- --------------------------------------------------------------
+                     TABEL REKAPITULASI CAPAIAN AKADEMIK (10 Proyek - 34 SKS)
+                     Data tabel ini tetap statis karena bersifat dokumen akademik resmi.
+                     -------------------------------------------------------------- -->
                 <div id="rekapitulasi" class="table-showcase-container">
                     <header class="table-header-box">
                         <h3 class="table-heading">Tabel Rekapitulasi Capaian Akademik &amp; 10 Proyek Unggulan</h3>
@@ -304,7 +255,11 @@
                 </div>
             </section>
 
-            <!-- SECTION 3: FORMULIR LAYANAN & PROSES (Bobot 20%) -->
+            <!-- --------------------------------------------------------------
+                 SECTION: FORMULIR PEMESANAN LAYANAN
+                 id="consultationForm" wajib ada agar app.js bisa menemukan
+                 dan menangani event submit secara asinkron (tanpa reload halaman).
+                 -------------------------------------------------------------- -->
             <section id="layanan" class="content-section" aria-labelledby="heading-layanan">
                 <header class="section-intro">
                     <span class="section-kicker">Kolaborasi &amp; Konsultasi</span>
@@ -312,7 +267,7 @@
                     <p class="section-lead">Membutuhkan audit aksesibilitas, perancangan antarmuka semantik, perancangan sistem informasi (ANAPRANCIS), atau konsultasi proses bisnis (MANPROBIS/MPSI)? Lengkapi formulir di bawah ini.</p>
                 </header>
 
-                <!-- Alur Proses Konsultasi (Ordered List: ol) -->
+                <!-- Alur Proses Konsultasi -->
                 <div class="process-flow-block">
                     <h3 class="process-title">Alur Standar Pelayanan &amp; Konsultasi Proyek</h3>
                     <ol class="flow-step-list">
@@ -335,9 +290,13 @@
                     </ol>
                 </div>
 
-                <!-- Formulir Interaktif & Accessible (8 Kontrol Input, 2 Fieldset) -->
-                <form action="#layanan" method="POST" class="consultation-form" novalidate>
-                    <!-- FIELDSET 1: IDENTITAS & KONTAK PEMESAN -->
+                <!-- FORMULIR PEMESANAN LAYANAN
+                     id="consultationForm": wajib ada, digunakan oleh App.setupFormHandler()
+                     di app.js untuk menangkap event submit secara asinkron (e.preventDefault).
+                     novalidate: validasi HTML5 dikendalikan manual oleh app.js. -->
+                <form id="consultationForm" action="#layanan" method="POST" class="consultation-form" novalidate>
+
+                    <!-- Fieldset 1: Identitas & Kontak Pemesan -->
                     <fieldset class="form-fieldset">
                         <legend class="fieldset-legend">1. Identitas &amp; Kontak Pemesan Layanan</legend>
                         <p class="fieldset-helper-text">Informasi ini digunakan untuk korespondensi resmi dan konfirmasi jadwal sesi konsultasi bersama Josef Christian Marpaung.</p>
@@ -370,13 +329,14 @@
                         </div>
                     </fieldset>
 
-                    <!-- FIELDSET 2: SPESIFIKASI TEKNIS & RINCIAN PROYEK -->
+                    <!-- Fieldset 2: Spesifikasi Teknis & Rincian Proyek -->
                     <fieldset class="form-fieldset">
                         <legend class="fieldset-legend">2. Spesifikasi Teknis &amp; Rincian Proyek</legend>
                         <p class="fieldset-helper-text">Tentukan fokus layanan konsultasi yang dibutuhkan, estimasi durasi waktu, serta fitur pelengkap sistem.</p>
                         <div class="form-grid-two">
                             <div class="form-field-group">
                                 <label for="service-package" class="field-label">Pilihan Paket Layanan <span class="required-mark" aria-hidden="true">*</span></label>
+                                <!-- Nilai value harus sinkron dengan id di data/services.json -->
                                 <select id="service-package" name="service-package" class="form-select" required>
                                     <option value="" disabled selected>-- Pilih Fokus Layanan Konsultasi --</option>
                                     <option value="ui-ux-design">Perancangan UI/UX &amp; Prototyping Antarmuka Web</option>
@@ -409,6 +369,8 @@
                         </div>
                     </fieldset>
 
+                    <!-- Tombol Submit & Reset
+                         Tombol submit: app.js mengubahnya menjadi disabled + spinner saat proses kirim -->
                     <div class="form-actions-box">
                         <button type="submit" class="btn btn-primary btn-submit">Kirim Formulir Pemesanan Layanan &rarr;</button>
                         <button type="reset" class="btn btn-secondary">Reset Formulir</button>
@@ -418,7 +380,9 @@
 
         </main>
 
-        <!-- 3. ASIDE / SIDEBAR SEMANTIK -->
+        <!-- ==================================================================
+             4. SIDEBAR / ASIDE SEMANTIK
+             ================================================================== -->
         <aside class="site-sidebar" aria-label="Informasi Tambahan dan Status Pengembang">
             <article class="sidebar-widget-card">
                 <h3 class="widget-title">Identitas Akademik</h3>
@@ -458,15 +422,18 @@
             </article>
         </aside>
 
-    </div>
+    </div><!-- /.layout-wrapper -->
 
-    <!-- 4. FOOTER SEMANTIK -->
+    <!-- =====================================================================
+         5. FOOTER SEMANTIK
+         ===================================================================== -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-column footer-brand-column">
                 <span class="footer-brand-title">Josef Christian Marpaung</span>
                 <p class="footer-brand-desc">
-                    Single Page Showcase Webpage &middot; Portofolio Profil Profesional Mahasiswa S1 Sistem Informasi Institut Teknologi Del. Mengintegrasikan perancangan antarmuka responsif modern, logika proses bisnis, dan aksesibilitas inklusif.
+                    Single Page Showcase Webpage &middot; Portofolio Profil Profesional Mahasiswa S1 Sistem Informasi Institut Teknologi Del.
+                    Mengintegrasikan perancangan antarmuka responsif modern, logika proses bisnis, dan aksesibilitas inklusif.
                 </p>
                 <p class="wcag-compliance-note">Dirancang sesuai kriteria kepatuhan <strong>WCAG 2.2 Level AA</strong> dan validasi standar W3C.</p>
             </div>
@@ -501,48 +468,25 @@
         </div>
     </footer>
 
-    <!-- ==========================================================================
-         BOOTSTRAP 5 MODAL DIALOGS (Memenuhi Butir 3 & Lab 3: Minimal 2 Modal Berbeda)
-         ========================================================================== -->
-    <!-- Modal 1: Detail Proyek Gunung Sibayak (ANAPRANCIS) -->
-    <div class="modal fade" id="modalProyek1" tabindex="-1" aria-labelledby="modalProyek1Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+    <!-- =====================================================================
+         UNIVERSAL DYNAMIC MODAL (Week 4 — Modul Lab 2)
+         Hanya ADA 1 modal di seluruh halaman ini (tidak ada duplikasi).
+         id="universalProjectModal": ditemukan oleh App.openProjectModal() di app.js.
+         Kontennya (judul, gambar, deskripsi, tag) diisi secara dinamis
+         berdasarkan proyek mana yang tombolnya diklik (via data-id).
+         ===================================================================== -->
+    <div class="modal fade" id="universalProjectModal" tabindex="-1"
+         aria-labelledby="projectModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="modalProyek1Label">
-                        <i class="bi bi-diagram-3 me-2 text-primary"></i>Sistem Informasi Penyewaan Alat Daki Gunung Sibayak
-                    </h5>
+                <div class="modal-header bg-dark text-white">
+                    <!-- id="projectModalTitle": diisi oleh app.js dengan judul proyek yang diklik -->
+                    <h5 class="modal-title fw-bold" id="projectModalTitle">Detail Proyek</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
                 </div>
-                <div class="modal-body p-4">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <div class="p-3 bg-light rounded border">
-                                <small class="text-muted d-block fw-bold text-uppercase">Mata Kuliah</small>
-                                <span class="fw-bold text-dark">ANAPRANCIS (ISS3101) &middot; 4 SKS</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="p-3 bg-light rounded border">
-                                <small class="text-muted d-block fw-bold text-uppercase">Peran Utama</small>
-                                <span class="fw-bold text-dark">Lead System Analyst &amp; BPMN Modeler</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h6 class="fw-bold text-dark">Latar Belakang &amp; Solusi Sistem</h6>
-                    <p class="text-secondary small">
-                        Pemesanan manual alat daki gunung Sibayak melalui WhatsApp sering memicu kekeliruan pencatatan stok fisik, jadwal pengembalian yang terlambat, serta kehilangan rekonsiliasi pembayaran uang muka. Sistem ini dirancang untuk mendigitalkan seluruh siklus layanan penyewaan secara terintegrasi.
-                    </p>
-                    <h6 class="fw-bold text-dark mt-3">Modul &amp; Ruang Lingkup Analisis</h6>
-                    <ul class="text-secondary small mb-3">
-                        <li><strong>Modul Katalog &amp; Stok:</strong> Pemantauan ketersediaan tenda, carrier, dan nesting secara langsung.</li>
-                        <li><strong>Modul Booking &amp; DP:</strong> Reservasi tanggal pendakian dengan konfirmasi deposit otomatis.</li>
-                        <li><strong>Pemodelan BPMN:</strong> Standarisasi alur interaksi antara Pendaki, Petugas Basecamp, dan Kasir.</li>
-                    </ul>
-                    <div class="alert alert-primary d-flex align-items-center py-2 px-3 mb-0" role="alert">
-                        <i class="bi bi-check-circle-fill me-2 fs-5"></i>
-                        <span class="small"><strong>Hasil Capaian:</strong> Nilai A (Istimewa) &middot; Desain alur proses bisnis terverifikasi siap implementasi.</span>
-                    </div>
+                <!-- id="projectModalBody": diisi oleh app.js dengan detail proyek secara dinamis -->
+                <div class="modal-body p-4" id="projectModalBody">
+                    <!-- Konten detail proyek diinjeksi di sini oleh App.openProjectModal() -->
                 </div>
                 <div class="modal-footer bg-light">
                     <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
@@ -552,55 +496,41 @@
         </div>
     </div>
 
-    <!-- Modal 2: Detail Proyek UI/UX Buku KIA & Imunisasi -->
-    <div class="modal fade" id="modalProyek2" tabindex="-1" aria-labelledby="modalProyek2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="modalProyek2Label">
-                        <i class="bi bi-phone me-2 text-info"></i>Perancangan UI/UX Aplikasi Mobile Buku KIA &amp; Imunisasi
-                    </h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <div class="p-3 bg-light rounded border">
-                                <small class="text-muted d-block fw-bold text-uppercase">Mata Kuliah</small>
-                                <span class="fw-bold text-dark">UI/UX Design (ISS2203) &middot; 3 SKS</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="p-3 bg-light rounded border">
-                                <small class="text-muted d-block fw-bold text-uppercase">Peran Utama</small>
-                                <span class="fw-bold text-dark">UI/UX Designer &amp; Design System Creator</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h6 class="fw-bold text-dark">Tantangan &amp; Pendekatan Desain</h6>
-                    <p class="text-secondary small">
-                        Buku KIA fisik konvensional rentan rusak, basah, atau hilang saat dibawa ke Posyandu, sehingga riwayat imunisasi anak sulit terlacak. Pendekatan perancangan antarmuka berpusat pada pengguna (*User-Centered Design*) memastikan aplikasi ramah bagi orang tua dari berbagai rentang usia.
-                    </p>
-                    <h6 class="fw-bold text-dark mt-3">Metodologi &amp; Fitur Antarmuka</h6>
-                    <ul class="text-secondary small mb-3">
-                        <li><strong>User Persona &amp; Journey Map:</strong> Pemetaan alur kebutuhan ibu hamil dan tenaga medis Posyandu.</li>
-                        <li><strong>Design System di Figma:</strong> Standarisasi tipografi, token warna palet ramah, ikonografi, dan ukuran touch-target (minimal 44x44px).</li>
-                        <li><strong>Kepatuhan WCAG 2.2 AA:</strong> Rasio kontras teks minimal 4.5:1 untuk keterbacaan optimal di luar ruangan.</li>
-                    </ul>
-                    <div class="alert alert-info d-flex align-items-center py-2 px-3 mb-0" role="alert">
-                        <i class="bi bi-award-fill me-2 fs-5 text-info"></i>
-                        <span class="small"><strong>Hasil Capaian:</strong> Nilai A (Istimewa) &middot; Prototipe interaktif tuntas diuji dan mendapat apresiasi.</span>
-                    </div>
-                </div>
-                <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
-                    <a href="#layanan" class="btn btn-brand btn-sm text-white" data-bs-dismiss="modal">Konsultasikan Desain UI/UX &rarr;</a>
-                </div>
+    <!-- =====================================================================
+         BOOTSTRAP TOAST — NOTIFIKASI INTERAKTIF (Week 4 — Modul Lab 3)
+         id="liveToastNotification": ditemukan oleh App.showToastNotification() di app.js.
+         Muncul di pojok kanan bawah layar sebagai umpan balik visual
+         setelah formulir berhasil atau gagal dikirim.
+         ===================================================================== -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+        <div id="liveToastNotification" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <!-- Header toast: warnanya berubah (bg-primary/bg-danger) sesuai hasil kirim -->
+            <div class="toast-header bg-primary text-white">
+                <i class="bi bi-bell-fill me-2"></i>
+                <!-- id="toastNotificationTitle": diisi oleh app.js sesuai hasil pengiriman -->
+                <strong class="me-auto" id="toastNotificationTitle">Notifikasi</strong>
+                <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="toast" aria-label="Tutup"></button>
+            </div>
+            <!-- id="toastNotificationBody": diisi oleh app.js sesuai pesan hasil pengiriman -->
+            <div class="toast-body" id="toastNotificationBody">
+                Pesan notifikasi akan muncul di sini.
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap 5.3.3 JS Bundle (Termasuk Popper) -->
+    <!-- =====================================================================
+         SCRIPT LOADING (Urutan pemuatan PENTING)
+         1. Bootstrap JS Bundle (termasuk Popper) — WAJIB dimuat pertama
+         2. api-service.js — Data Access Layer, dimuat sebelum app.js
+         3. app.js — Presentation Layer, dimuat terakhir karena bergantung pada
+                      Bootstrap dan ApiService yang sudah tersedia di window
+         ===================================================================== -->
+    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Data Access Layer: fungsi fetch ke JSON provider -->
+    <script src="js/api-service.js"></script>
+    <!-- Presentation Layer: rendering CSR, filter, modal, form, localStorage, toast -->
+    <script src="js/app.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Sistem Informasi Penyewaan Alat Daki Gunung Sibayak",
+    "category": "Analisis & Perancangan Sistem",
+    "course": "ANAPRANCIS (ISS3101)",
+    "role": "Lead System Analyst & BPMN Modeler",
+    "description": "Perancangan sistem informasi modern pengganti pemesanan manual via WhatsApp/telepon. Mencakup modul reservasi, verifikasi stok, pembayaran, serta pemodelan alur proses standar BPMN.",
+    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+    "metrics": "Nilai A (Istimewa) • 4 SKS",
+    "tags": ["BPMN Modeling", "Sistem Informasi", "Analisis Sistem", "UML"],
+    "link": "https://github.com/JosefMarpaung"
+  },
+  {
+    "id": "proj-2",
+    "title": "Perancangan UI/UX Aplikasi Mobile Buku KIA & Imunisasi",
+    "category": "UI/UX & Desain Antarmuka",
+    "course": "UI/UX Design (ISS2203)",
+    "role": "UI/UX Designer & Prototyper",
+    "description": "Perancangan antarmuka mobile ramah pengguna untuk akses informasi imunisasi dasar lengkap. Mencakup arsitektur informasi, antarmuka visual, dan style guide komprehensif di Figma/FigJam.",
+    "thumbnail": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
+    "metrics": "Nilai A (Istimewa) • 3 SKS",
+    "tags": ["Figma", "FigJam", "Style Guide", "A11y WCAG", "Prototyping"],
+    "link": "https://github.com/JosefMarpaung"
+  },
+  {
+    "id": "proj-3",
+    "title": "COOKIES IN YOUR HEART – Sistem Penjualan Cookies",
+    "category": "Pemrograman & Basis Data",
+    "course": "Pemrograman Berorientasi Objek (IFS2102)",
+    "role": "Java Developer & Database Designer",
+    "description": "Aplikasi desktop berbasis Java untuk transaksi pembelian cookies. Menerapkan OOP, Java Collections Framework, SQLite JDBC, dan Data Mapper dengan fitur CRUD, pencarian pembeli, dan cetak struk.",
+    "thumbnail": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80",
+    "metrics": "Nilai A (Istimewa) • 4 SKS",
+    "tags": ["Java OOP", "JDBC", "SQLite", "Data Mapper", "CRUD"],
+    "link": "https://github.com/JosefMarpaung"
+  },
+  {
+    "id": "proj-4",
+    "title": "Website Profil Profesional & Form Layanan Interaktif",
+    "category": "Rekayasa Web & Frontend",
+    "course": "Pemrograman dan Pengujian Web (12S3101)",
+    "role": "Full Frontend Web Developer",
+    "description": "Pengembangan website single-page portofolio profil profesional modern menggunakan HTML5 Semantik, Bootstrap 5 responsif, kepatuhan WCAG 2.2 AA, Decoupled Architecture, dan CSR asinkron.",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    "metrics": "Nilai A (Istimewa) • 4 SKS",
+    "tags": ["HTML5 Semantic", "Bootstrap 5", "Client-Side Rendering", "Async Fetch"],
+    "link": "https://github.com/JosefMarpaung"
+  }
+]
